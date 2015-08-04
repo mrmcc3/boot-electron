@@ -2,7 +2,7 @@
 
 Boot task for installing and running [electron](http://electron.atom.io/)
 
-[![Clojars Project](http://clojars.org/mrmcc3/boot-electron/latest-version.svg)]
+![Clojars Project](http://clojars.org/mrmcc3/boot-electron/latest-version.svg)
 
 ### Usage
 
