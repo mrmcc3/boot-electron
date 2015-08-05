@@ -1,17 +1,20 @@
+(def +project+ 'mrmcc3/boot-electron)
+(def +version+ "0.1.0-SNAPSHOT")
+
 (set-env!
- :source-paths #{"src"}
- :dependencies '[[org.clojure/clojure "1.7.0" :scope "provided"]
-                 [boot/core "2.2.0" :scope "provided"]
-                 [adzerk/bootlaces "0.1.11" :scope "test"]])
+  :project +project+
+  :version +version+
+  :source-paths #{"src"}
+  :dependencies '[[org.clojure/clojure "1.7.0" :scope "provided"]
+                  [boot/core "2.2.0" :scope "provided"]
+                  [adzerk/bootlaces "0.1.11" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all])
-
-(def +version+ "0.1.0-SNAPSHOT")
 
 (bootlaces! +version+)
 
 (task-options!
-  pom {:project     'mrmcc3/boot-electron
+  pom {:project     +project+
        :version     +version+
        :description "Boot task for installing and running electron (via npm)"
        :url         "https://github.com/mrmcc3/boot-electron"
